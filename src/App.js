@@ -4,7 +4,8 @@ import styled from "styled-components";
 import About from "./components/About";
 import Projects from "./components/Projects/Projects";
 import NavBar from "./components/NavBar";
-import 'bootstrap/dist/css/bootstrap.css'
+import TechStack from "./components/TechStack/TechStack";
+import Footer from "./components/Footer/Footer";
 
 const Padd = styled.div`
   font-family: 'Ubuntu', sans-serif;
@@ -35,6 +36,10 @@ function App() {
         <About />
 
         <Projects/>
+
+        <TechStack/>
+
+        <Footer/>
       </Container>
     </Padd>
   );
