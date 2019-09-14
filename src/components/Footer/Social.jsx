@@ -9,7 +9,7 @@ const Anchor = styled.a`
 const Social = ({ icon, link }) => {
   return (
     <Anchor href={link}>
-      <i class={icon}></i>
+      <i className={icon}></i>
     </Anchor>
   );
 };

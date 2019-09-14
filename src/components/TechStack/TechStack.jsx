@@ -25,7 +25,7 @@ const TechStack = () => {
       </HeaderDesc>
 
       {techStack.map(tech => (
-        <Tech {...tech} />
+        <Tech key={techStack.indexOf(tech)} {...tech} />
       ))}
     </Section>
   );

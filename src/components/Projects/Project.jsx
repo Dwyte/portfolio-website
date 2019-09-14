@@ -2,21 +2,25 @@ import React from "react";
 import styled from "styled-components";
 
 const Media = styled.div`
-  margin-bottom: 25px;
+  background: rgba(5, 5, 5, 1);
+  padding: 12px;
+  color: white;
+  border-radius: 12px;
+  line-height: 15px;
+  font-size: 12px;
   
-  h5 {
+  h6 {
     font-weight: bold;
     margin: 0px;
   }
-`
+`;
 
-
-const Project = ({title, logo, description}) => {
+const Project = ({ title, logo, description }) => {
   return (
     <Media className="media text-left">
-      <img src={logo} width={64} className="mr-3" alt="..." />
+      <img src={logo} width={64} className="mr-2" alt="..." />
       <div className="media-body">
-        <h5 className="mt-0">{title}</h5>
+        <h6 className="mt-0">{title}</h6>
         {description}
       </div>
     </Media>

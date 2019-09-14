@@ -14,7 +14,7 @@ const socials = [
 const Footer = () => {
   return (
     <Section id="footer">
-        {socials.map(social => <Social {...social}/>)}
+        {socials.map(social => <Social key={socials.indexOf(social)} {...social}/>)}
     </Section>
   );
 };
