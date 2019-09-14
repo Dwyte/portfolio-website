@@ -15,9 +15,9 @@ const ProjGrid = ({ projectGroups }) => {
   return (
     <Container className="container">
       {projectGroups.map(row => (
-        <div className="row">
+        <div key={projectGroups.indexOf(row)} className="row">
           {row.map(project => (
-            <ColSm className="col-sm">
+            <ColSm key={row.indexOf(project)} className="col-sm">
               <Project {...project} />
             </ColSm>
           ))}

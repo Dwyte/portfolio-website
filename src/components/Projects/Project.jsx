@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 const Media = styled.div`
-  background: rgba(5, 5, 5, 1);
+  background: rgba(25, 25, 25, 1);
   padding: 12px;
   color: white;
   border-radius: 12px;
