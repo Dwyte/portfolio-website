@@ -1,13 +1,22 @@
-import React from 'react';
+import React from "react";
+import Social from "./Social";
+import Section from "../common/Section";
+
+
+const socials = [
+  { icon: "fab fa-twitter", link: "https://www.twitter.com" },
+  { icon: "fab fa-github", link: "https://www.github.com" },
+  { icon: "fab fa-youtube", link: "https://www.youtube.com" },
+  { icon: "fab fa-stack-overflow", link: "https://www.stackoverflow.com" },
+  { icon: "fab fa-hackerrank", link: "https://www.hackerrank.com" }
+];
 
 const Footer = () => {
-    return ( <footer>
-        <i class="fab fa-twitter"></i>
-        <i class="fab fa-github"></i>
-        <i class="fab fa-youtube"></i>
-        <i class="fab fa-stack-overflow"></i>
-        <i class="fab fa-hackerrank"></i>
-    </footer> );
-}
- 
+  return (
+    <Section id="footer">
+        {socials.map(social => <Social {...social}/>)}
+    </Section>
+  );
+};
+
 export default Footer;

@@ -1,7 +1,8 @@
 import React from "react";
 import Project from "./Project";
 import sample from "../../assets/sampleLogo.png";
-import styled from "styled-components"
+import HeaderDesc from "../common/HeaderDesc";
+import Section from "../common/Section";
 
 const projects = [
   {
@@ -30,21 +31,17 @@ const projects = [
   }
 ];
 
-const Div = styled.div`
-  margin: 50px 0px;
-  h2 {
-    margin-bottom: 25px;
-  }
-`
-
 const Projects = () => {
   return (
-    <Div>
-      <h2>Projects</h2>
+    <Section id="projects">
+      <HeaderDesc>
+        <h2>Projects</h2>
+        <p>I have developed and worked on</p>
+      </HeaderDesc>
       {projects.map(project => (
         <Project {...project} />
       ))}
-    </Div>
+    </Section>
   );
 };
 

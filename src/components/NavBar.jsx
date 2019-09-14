@@ -13,16 +13,16 @@ const NavBar = () => {
   return (
     <Nav className="navbar navbar-expand navbar-light bg-none">
       <div className="navbar-nav">
-        <a className="nav-item nav-link active" href="#">
+        <a className="nav-item nav-link active" href="#home">
           Home
         </a>
-        <a className="nav-item nav-link" href="#">
+        <a className="nav-item nav-link" href="#projects">
           Projects
         </a>
-        <a className="nav-item nav-link" href="#">
-          Skills
+        <a className="nav-item nav-link" href="#techstack">
+          TechStack
         </a>
-        <a className="nav-item nav-link" href="#">
+        <a className="nav-item nav-link" href="#software">
           Software
         </a>
       </div>

@@ -5,6 +5,8 @@ import mongodb from "../../assets/techstack/mongodb.png";
 import unity from "../../assets/techstack/unity.png";
 import python from "../../assets/techstack/python.png";
 import Tech from "./Tech";
+import Section from "../common/Section";
+import HeaderDesc from "../common/HeaderDesc";
 
 const techStack = [
   { img: nodejs, width: 75 },
@@ -16,11 +18,16 @@ const techStack = [
 
 const TechStack = () => {
   return (
-    <React.Fragment>
-      <h2>Technology Stack</h2>
+    <Section id="techstack">
+      <HeaderDesc>
+        <h2>Technology Stack</h2>
+        <p>Frameworks/Languages I'm familiar working with</p>
+      </HeaderDesc>
 
-      {techStack.map(tech => <Tech {...tech}/>)}
-    </React.Fragment>
+      {techStack.map(tech => (
+        <Tech {...tech} />
+      ))}
+    </Section>
   );
 };
 
