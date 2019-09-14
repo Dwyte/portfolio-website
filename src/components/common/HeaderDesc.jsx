@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 const Div = styled.div`
+  position: relative;
   margin-bottom: 25px;
 
   h1,
@@ -13,8 +14,9 @@ const Div = styled.div`
 
   p {
     position: absolute;
-    left: 0;
-    right: 0;
+    left: 0px;
+    right: 0px;
+
     margin-left: auto;
     margin-right: auto;
     z-index: -1;

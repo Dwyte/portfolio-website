@@ -1,32 +1,24 @@
 import React from "react";
-import styled from "styled-components";
-
-const Nav = styled.nav`
-  display: inline-block !important;
-
-  .nav-item {
-    text-align: center;
-  }
-`;
 
 const NavBar = () => {
   return (
-    <Nav className="navbar navbar-expand navbar-light bg-none">
-      <div className="navbar-nav">
-        <a className="nav-item nav-link active" href="#home">
-          Home
+    <ul className="nav justify-content-center">
+      <li className="nav-item">
+        <a className="nav-link text-dark" href="#home">
+          <b>Dwyte Martin</b>
         </a>
-        <a className="nav-item nav-link" href="#projects">
+      </li>
+      <li className="nav-item">
+        <a className="nav-link text-dark" href="#projects">
           Projects
         </a>
-        <a className="nav-item nav-link" href="#techstack">
+      </li>
+      <li className="nav-item">
+        <a className="nav-link text-dark" href="#techstack">
           TechStack
         </a>
-        <a className="nav-item nav-link" href="#software">
-          Software
-        </a>
-      </div>
-    </Nav>
+      </li>
+    </ul>
   );
 };
 
