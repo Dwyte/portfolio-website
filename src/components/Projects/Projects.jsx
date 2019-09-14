@@ -1,41 +1,10 @@
 import React, { useState } from "react";
-import sample from "../../assets/sampleLogo.png";
 import HeaderDesc from "../common/HeaderDesc";
 import Section from "../common/Section";
 import ProjGrid from "./ProjGrid";
 import ProjNav from "./ProjNav";
 import _ from "lodash";
-
-const projects = [
-  {
-    title: "ProjectApp #1",
-    logo: sample,
-    type: "webapp",
-    description: `Veniam deserunt quaerat voluptas fugiat maiores 
-    cupiditate et id. Molestiae ut aliquid asperiores optio et.`
-  },
-  {
-    title: "ProjectApp #2",
-    logo: sample,
-    type: "python3",
-    description: `Veniam deserunt quaerat voluptas fugiat maiores 
-    cupiditate et id. Molestiae ut aliquid asperiores optio et.`
-  },
-  {
-    title: "ProjectApp #3",
-    logo: sample,
-    type: "mobile",
-    description: `Veniam deserunt quaerat voluptas fugiat maiores 
-    cupiditate et id. Molestiae ut aliquid asperiores optio et.`
-  },
-  {
-    title: "ProjectApp #4",
-    logo: sample,
-    type: "webapp",
-    description: `Veniam deserunt quaerat voluptas fugiat maiores 
-    cupiditate et id. Molestiae ut aliquid asperiores optio et.`
-  }
-];
+import projects from "../../data/projects.json";
 
 const Projects = () => {
   const [filterIndex, setFilter] = useState(0);
@@ -58,7 +27,20 @@ const Projects = () => {
   }
 
   // Filter Projects
-  const filteredProjects = _.filter(projects, filters[filterIndex].filterMethod)
+  const filteredProjects = _.filter(
+    projects,
+    filters[filterIndex].filterMethod
+  );
+
+  if (filteredProjects.length % 2 !== 0) {
+    filteredProjects.push({
+      title: "🚧 Under Development 🚧",
+      logo: "/static/media/development.098279ac.jpg",
+      type: "python3",
+      description:
+        "More Useful Applications to be released, developed and worked upon soon!"
+    });
+  }
 
   return (
     <Section id="projects">

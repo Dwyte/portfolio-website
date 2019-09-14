@@ -1,0 +1,70 @@
+[
+    {
+        "title": "Color Rush",
+        "logo": "/static/media/colorrush.d4e63a8c.png",
+        "type": "mobile",
+        "description": "Color rush is an awesome, addictive, intensely challenging, mind blowing, brain busting, simple yet amazing game."
+    },
+    {
+        "title": "MineRush",
+        "logo": "/static/media/minerrush.760aec68.png",
+        "type": "mobile",
+        "description": "Minerush is an Educational Game aiming to help students to enjoy playing while learning integers. "
+    },
+    {
+        "title": "The Bitcoin Blockchain",
+        "logo": "/static/media/tbb.e08952a0.png",
+        "type": "mobile",
+        "description": "An interactive application, demonstrates how the technologies behind bitcoin work together to accomplish decentralization."
+    },
+    {
+        "title": "Vortex Dwyte Voting System",
+        "logo": "/static/media/vdvs.200f0d12.png",
+        "type": "webapp",
+        "description": "A Capstone Project for facilitating the student supreme government elections. (Co-developed with carljustinemosquida)"
+    },
+    {
+        "title": "CoinMarketSignals",
+        "logo": "/static/media/coinmarketsignals.b3215a5c.png",
+        "type": "webapp",
+        "description": "CoinMarketSignals is a data platform of cryptocurrencies and what the popular technical indicators tell about them."
+    },
+    {
+        "title": "VaultSafe",
+        "logo": "/static/media/vaultsafe.ca0e703e.png",
+        "type": "webapp",
+        "description": "Glorified TodoApp with encryption techniques I developed while learning ReactJS hooks."
+    },
+    {
+        "title": "CipherChat",
+        "logo": "/static/media/cc-icon.418f67e7.png",
+        "type": "webapp",
+        "description": "An end-to-end encrypted instant messaging app built with MERN Stack. The app uses RSA assymetric encryption."
+    },
+    {
+        "title": "Bitcoin Ticker",
+        "logo": "/static/media/btc-ticker.229325a2.png",
+        "type": "python3",
+        "description": "A system tray application for linux that shows bitcoin's current USD price, and updates ever 3 seconds."
+    },
+    {
+        "title": "Mexbot",
+        "logo": "/static/media/mexbot.68c72092.png",
+        "type": "python3",
+        "description": "A discord bot connected to the Bitmex's WebSocket API that shows large-quantity trades in real-time"
+    },
+    {
+        "title": "Fx Calendar Bot",
+        "logo": "/static/media/forexbot.f2e0b740.png",
+        "type": "python3",
+        "description": "A discord bot that shows weekly, daily, and upcoming news on the forex factory calendar. Alerts on telegram as well."
+    },
+    {
+        "title": "Moon Bot",
+        "logo": "/static/media/moonbot.b1e183d1.png",
+        "type": "python3",
+        "description": "A discord bot that shows real time moon phases and how much time left before the next full moon."
+    }
+]
+
+

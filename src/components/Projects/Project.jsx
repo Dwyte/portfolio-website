@@ -9,6 +9,10 @@ const Media = styled.div`
   line-height: 15px;
   font-size: 12px;
   
+  img {
+    border-radius: 12px;
+  }
+
   h6 {
     font-weight: bold;
     margin: 0px;
