@@ -1,3 +1,4 @@
+
 [
     {
         "title": "Color Rush",
@@ -43,7 +44,7 @@
     },
     {
         "title": "Bitcoin Ticker",
-        "logo": "/static/media/btc-ticker.229325a2.png",
+        "logo": "../assets/projects/btc-ticker.png",
         "type": "python3",
         "description": "A system tray application for linux that shows bitcoin's current USD price, and updates ever 3 seconds."
     },
