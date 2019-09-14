@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 const TechImg = styled.img`
-  margin: 25px;
+  margin: 20px;
 `;
 
 const Tech = ({ img, width }) => {

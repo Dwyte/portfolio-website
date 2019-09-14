@@ -3,10 +3,9 @@ import React from "react";
 const About = () => {
   return (
     <p>
-      <b>I'm Dwight Martinez,</b> voluptas et. Quam blanditiis veritatis tempora harum
-      magnam. Aut quia ad temporibus qui repellat eos autem non. Et qui quis
-      tempora laboriosam quidem molestias. Est necessitatibus quia cumque
-      perspiciatis delectus ut quidem modi.
+      I'm a self-taught developer, started out developing games about 3 years ago. <br/>
+      Currently a first year computer science student, learning emerging web technologies <br/> with
+      interests on finance, cryptography and distributed ledger technology.
     </p>
   );
 };

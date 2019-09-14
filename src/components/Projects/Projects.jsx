@@ -3,8 +3,11 @@ import HeaderDesc from "../common/HeaderDesc";
 import Section from "../common/Section";
 import ProjGrid from "./ProjGrid";
 import ProjNav from "./ProjNav";
+import underDevImg from "../../assets/projects/development.jpg"
 import _ from "lodash";
-import projects from "../../data/projects.json";
+import getProjects from "../../services/projects";
+
+const projects = getProjects()
 
 const Projects = () => {
   const [filterIndex, setFilter] = useState(0);
@@ -35,7 +38,7 @@ const Projects = () => {
   if (filteredProjects.length % 2 !== 0) {
     filteredProjects.push({
       title: "🚧 Under Development 🚧",
-      logo: "/static/media/development.098279ac.jpg",
+      logo: underDevImg,
       type: "python3",
       description:
         "More Useful Applications to be released, developed and worked upon soon!"

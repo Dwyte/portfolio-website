@@ -9,11 +9,11 @@ import Section from "../common/Section";
 import HeaderDesc from "../common/HeaderDesc";
 
 const techStack = [
-  { img: nodejs, width: 75 },
-  { img: reactjs, width: 75 },
-  { img: mongodb, width: 75 },
-  { img: python, width: 75 },
-  { img: unity, width: 75 }
+  { img: nodejs, width: 100 },
+  { img: reactjs, width: 100 },
+  { img: mongodb, width: 100 },
+  { img: python, width: 100 },
+  { img: unity, width: 100 }
 ];
 
 const TechStack = () => {
