@@ -3,19 +3,31 @@ import HeaderDesc from "../common/HeaderDesc";
 import Section from "../common/Section";
 import ProjGrid from "./ProjGrid";
 import ProjNav from "./ProjNav";
-import underDevImg from "../../assets/projects/development.jpg"
+import underDevImg from "../../assets/projects/development.jpg";
 import _ from "lodash";
 import getProjects from "../../services/projects";
 
-const projects = getProjects()
+const projects = getProjects();
 
 const Projects = () => {
   const [filterIndex, setFilter] = useState(0);
   const filters = [
-    { label: "All of 'em", filterMethod: null },
-    { label: "Python3", filterMethod: ({ type }) => type === "python3" },
-    { label: "WebApps", filterMethod: ({ type }) => type === "webapp" },
-    { label: "MobileApps", filterMethod: ({ type }) => type === "mobile" }
+    { icon: "fab fa-python", label: "All of 'em", filterMethod: null },
+    {
+      icon: "fab fa-python",
+      label: "Python",
+      filterMethod: ({ type }) => type === "python3"
+    },
+    {
+      icon: "fab fa-internet-explorer",
+      label: "Web",
+      filterMethod: ({ type }) => type === "webapp"
+    },
+    {
+      icon: "fas fa-mobile",
+      label: "Mobile",
+      filterMethod: ({ type }) => type === "mobile"
+    }
   ];
 
   function sliceArrayIntoGroups(arr, size) {
@@ -37,7 +49,7 @@ const Projects = () => {
 
   if (filteredProjects.length % 2 !== 0) {
     filteredProjects.push({
-      title: "🚧 Under Development 🚧",
+      title: "Under Development 🚧",
       logo: underDevImg,
       type: "python3",
       description:

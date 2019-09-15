@@ -5,10 +5,23 @@ const NavItem = styled.li`
   cursor: pointer;
 
   div {
-    ${({ isActive }) => isActive && `color: black!important;`}
+    padding: 0.25rem 0.5rem;
+
+    @media only screen and (max-width: 600px) {
+      padding: 0.12rem 0.32rem;
+      font-size: 14px;
+    }
+
+    ${({ isActive }) =>
+      isActive &&
+      `
+        color: white !important;
+        background: rgb(25,25,25);
+        border-radius: 5px;
+      `}
 
     :hover {
-      color: black !important;
+      color: ${({ isActive }) => (isActive ? `white` : `black`)} !important;
     }
   }
 `;
@@ -25,11 +38,10 @@ const ProjNav = ({ filters, filterIndex, setFilter }) => {
           <div
             className="nav-link text-dark active"
             onClick={() => {
-              console.log("!");
               setFilter(filters.indexOf(filter));
             }}
           >
-            {filter.label}
+            <i className={filter.icon} /> {filter.label}
           </div>
         </NavItem>
       ))}

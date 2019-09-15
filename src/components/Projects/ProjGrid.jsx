@@ -5,10 +5,11 @@ import styled from "styled-components";
 const Container = styled.div`
   padding-left: 30px !important;
   padding-right: 0px !important;
+  margin-top: 10px!important;
 `;
 
 const ColSm = styled.div`
-  padding: 5px !important;
+  padding: 2.5px !important;
 `;
 
 const ProjGrid = ({ projectGroups }) => {

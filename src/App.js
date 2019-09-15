@@ -8,16 +8,21 @@ import TechStack from "./components/TechStack/TechStack";
 import Footer from "./components/Footer/Footer";
 
 const Padd = styled.div`
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   padding: 50px;
+
+  @media only screen and (max-width: 600px) {
+      padding: 25px;
+  }
 `;
 
 const Container = styled.div`
   max-width: 720px;
   margin: auto;
   text-align: center;
-  
-  h1, h2 {
+
+  h1,
+  h2 {
     font-weight: bold;
   }
 
@@ -30,16 +35,16 @@ function App() {
   return (
     <Padd>
       <Container>
-        <NavBar/>
+        <NavBar />
 
         <TitleLogo />
         <About />
 
-        <Projects/>
+        <Projects />
 
-        <TechStack/>
+        <TechStack />
 
-        <Footer/>
+        <Footer />
       </Container>
     </Padd>
   );

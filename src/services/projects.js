@@ -34,7 +34,7 @@ export default function getProjects() {
         "An interactive application, demonstrates how the technologies behind bitcoin work together to accomplish decentralization."
     },
     {
-      title: "Vortex Dwyte Voting System",
+      title: "V.D. Voting System",
       logo: vdvs,
       type: "webapp",
       description:

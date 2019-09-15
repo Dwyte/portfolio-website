@@ -3,11 +3,16 @@ import styled from "styled-components";
 
 const Anchor = styled.a`
   color: rgba(25, 25, 25, 1);
-  margin: 0px 25px;
   font-size: 24px;
+  margin: 0px 25px;
+
+  @media only screen and (max-width: 600px) {
+    font-size: 20px;
+    margin: 0px 20px;
+  }
 
   :hover {
-    color: ${({color}) => color}
+    color: ${({ color }) => color};
   }
 `;
 
