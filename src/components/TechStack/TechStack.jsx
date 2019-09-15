@@ -20,7 +20,7 @@ const TechStack = () => {
   return (
     <Section id="techstack">
       <HeaderDesc>
-        <h2>Technology Stack</h2>
+        <h2> Technology Stack</h2>
         <p>Frameworks/Languages I'm familiar working with</p>
       </HeaderDesc>
 

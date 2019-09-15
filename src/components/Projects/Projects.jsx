@@ -12,7 +12,7 @@ const projects = getProjects();
 const Projects = () => {
   const [filterIndex, setFilter] = useState(0);
   const filters = [
-    { icon: "fab fa-python", label: "All of 'em", filterMethod: null },
+    { icon: "fas fa-star-of-life", label: "All of 'em", filterMethod: null },
     {
       icon: "fab fa-python",
       label: "Python",
