@@ -2,7 +2,6 @@ import React from "react";
 import Social from "./Social";
 import Section from "../common/Section";
 
-
 const socials = [
   { icon: "fab fa-twitter", link: "https://twitter.com/DwyteMartin", color: "#1DA1F2" },
   { icon: "fab fa-github", link: "https://github.com/Dwyte", color: "#3A284D" },
@@ -13,7 +12,7 @@ const socials = [
 
 const Footer = () => {
   return (
-    <Section id="footer">
+    <Section id="footer" isLast={true}>
         {socials.map(social => <Social key={socials.indexOf(social)} {...social}/>)}
     </Section>
   );

@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import Section from "./common/Section";
 
 const Surname = styled.span`
   @media only screen and (max-width: 600px) {
@@ -32,11 +33,13 @@ const navs = [
 
 const NavItem = ({ children, href }) => {
   return (
-    <li className="nav-item">
-      <a className="nav-link text-dark" href={href}>
-        {children}
-      </a>
-    </li>
+    <Section>
+      <li className="nav-item">
+        <a className="nav-link text-dark" href={href}>
+          {children}
+        </a>
+      </li>
+    </Section>
   );
 };
 

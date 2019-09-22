@@ -19,14 +19,14 @@ const Div = styled.div`
 
     margin-left: auto;
     margin-right: auto;
-    z-index: -1;
-    margin-top: -18px;
-    color: rgba(75, 75, 75, 0.75);
+    margin-top: -12px;
+    color: ${({ isDark }) =>
+      isDark ? `white!important;` : `rgba(75,75,75,0.75)`};
   }
 `;
 
-const HeaderDesc = ({ children }) => {
-  return <Div>{children}</Div>;
+const HeaderDesc = ({ children, isDark }) => {
+  return <Div isDark={isDark}>{children}</Div>;
 };
 
 export default HeaderDesc;

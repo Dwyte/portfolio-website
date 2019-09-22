@@ -4,11 +4,12 @@ import styled from "styled-components";
 const Media = styled.div`
   color: white;
   width: 100%;
-  background: rgba(25, 25, 25, 1);
+  background: #000;
   padding: 12px;
   border-radius: 12px;
   line-height: 15px;
   font-size: 12px;
+  box-shadow: 1px 0px 5px -1px #000;
 
   img {
     border-radius: 12px;

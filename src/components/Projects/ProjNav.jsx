@@ -6,6 +6,7 @@ const NavItem = styled.li`
 
   div {
     padding: 0.25rem 0.5rem;
+    color: white !important;
 
     @media only screen and (max-width: 600px) {
       padding: 0.12rem 0.32rem;
@@ -15,14 +16,10 @@ const NavItem = styled.li`
     ${({ isActive }) =>
       isActive &&
       `
-        color: white !important;
-        background: rgb(25,25,25);
+        box-shadow: 1px 0px 5px -1px #000;
+        background: rgb(0,0,0);
         border-radius: 5px;
       `}
-
-    :hover {
-      color: ${({ isActive }) => (isActive ? `white` : `black`)} !important;
-    }
   }
 `;
 

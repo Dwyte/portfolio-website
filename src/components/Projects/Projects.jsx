@@ -6,6 +6,7 @@ import ProjNav from "./ProjNav";
 import underDevImg from "../../assets/projects/development.jpg";
 import _ from "lodash";
 import getProjects from "../../services/projects";
+import Container from "../common/Container";
 
 const projects = getProjects();
 
@@ -58,19 +59,21 @@ const Projects = () => {
   }
 
   return (
-    <Section id="projects">
-      <HeaderDesc>
-        <h2>Projects</h2>
-        <p>I have developed and worked on</p>
-      </HeaderDesc>
+    <Section id="projects" isDark={true}>
+      <Container>
+        <HeaderDesc isDark={true}>
+          <h2>Projects</h2>
+          <p>I have developed and worked on</p>
+        </HeaderDesc>
 
-      <ProjNav
-        filters={filters}
-        filterIndex={filterIndex}
-        setFilter={setFilter}
-      />
+        <ProjNav
+          filters={filters}
+          filterIndex={filterIndex}
+          setFilter={setFilter}
+        />
 
-      <ProjGrid projectGroups={sliceArrayIntoGroups(filteredProjects, 2)} />
+        <ProjGrid projectGroups={sliceArrayIntoGroups(filteredProjects, 2)} />
+      </Container>
     </Section>
   );
 };

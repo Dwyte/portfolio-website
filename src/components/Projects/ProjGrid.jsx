@@ -9,7 +9,7 @@ const Container = styled.div`
 `;
 
 const ColSm = styled.div`
-  padding: 2.5px !important;
+  padding: 5px !important;
 `;
 
 const ProjGrid = ({ projectGroups }) => {
