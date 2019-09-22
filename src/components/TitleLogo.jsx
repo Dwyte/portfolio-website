@@ -19,7 +19,7 @@ const TitleLogo = () => {
 
       <HeaderDesc>
         <h1>Dwyte</h1>
-        <p>0100110100101110</p>
+        <p>dwyte@tutanota.com</p>
       </HeaderDesc>
     </Div>
   );

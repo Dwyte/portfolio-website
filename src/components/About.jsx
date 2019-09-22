@@ -10,10 +10,7 @@ const P = styled.p`
 const About = () => {
   return (
     <P>
-      I'm a self-taught developer, started out developing games about 3 years
-      ago. Currently a first year computer science student, learning emerging
-      web technologies with interests on finance, cryptography and distributed
-      ledger technology.
+      🚧 Still a work in progress.. 🚧
     </P>
   );
 };
