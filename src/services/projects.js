@@ -17,56 +17,67 @@ export default function getProjects() {
       logo: colorrush,
       type: "mobile",
       description:
-        "Color rush is an awesome, addictive, intensely challenging, mind blowing, brain busting, simple yet amazing game."
+        "Color rush is an awesome, addictive, intensely challenging, mind blowing, brain busting, simple yet amazing game.",
+      projectUrl:
+        "https://play.google.com/store/apps/details?id=com.colorrush.colorswitch"
     },
     {
       title: "MineRush",
       logo: minerush,
       type: "mobile",
       description:
-        "Minerush is an Educational Game aiming to help students to enjoy playing while learning integers. "
+        "Minerush is an Educational Game aiming to help students to enjoy playing while learning integers. ",
+      projectUrl:
+        "https://play.google.com/store/apps/details?id=com.morpheus.minerrush"
     },
     {
       title: "The Bitcoin Blockchain",
       logo: tbb,
       type: "mobile",
       description:
-        "An interactive application, demonstrates how the technologies behind bitcoin work together to accomplish decentralization."
+        "An interactive application, demonstrates how the technologies behind bitcoin work together to accomplish decentralization.",
+      projectUrl:
+        "https://play.google.com/store/apps/details?id=com.Blockchain.Bitcoin"
     },
     {
       title: "V.D. Voting System",
       logo: vdvs,
       type: "webapp",
       description:
-        "A Capstone Project for facilitating the student supreme government elections. (Co-developed with carljustinemosquida)"
+        "A Capstone Project for facilitating the student supreme government elections. (Co-developed with carljustinemosquida)",
+      projectUrl: "https://www.youtube.com/watch?v=RC3OwBsIJsg"
     },
     {
       title: "CoinMarketSignals",
       logo: coinmarketsignals,
       type: "webapp",
       description:
-        "CoinMarketSignals is a data platform of cryptocurrencies and what the popular technical indicators tell about them."
+        "CoinMarketSignals is a data platform of cryptocurrencies and what the popular technical indicators tell about them.",
+        projectUrl: "https://coinmarketsignals.netlify.com"
     },
     {
       title: "VaultSafe",
       logo: vaultsafe,
       type: "webapp",
       description:
-        "Glorified TodoApp with encryption techniques I developed while learning ReactJS hooks."
+        "Glorified TodoApp with encryption techniques I developed while learning ReactJS hooks.",
+        projectUrl: "https://vaultsafe.herokuapp.com"
     },
     {
       title: "CipherChat",
       logo: cipherchat,
       type: "webapp",
       description:
-        "An end-to-end encrypted instant messaging app built with MERN Stack. The app uses RSA assymetric encryption."
+        "An end-to-end encrypted instant messaging app built with MERN Stack. The app uses RSA assymetric encryption.",
+        projectUrl: "https://cipherchat.herokuapp.com"
     },
     {
       title: "Bitcoin Ticker",
       logo: btcticker,
       type: "python3",
       description:
-        "A system tray application for linux that shows bitcoin's current USD price, and updates ever 3 seconds."
+        "A system tray application for linux that shows bitcoin's current USD price, and updates ever 3 seconds.",
+        projectUrl: "https://www.youtube.com/watch?v=CigorCz_3S0"
     },
     {
       title: "Mexbot",

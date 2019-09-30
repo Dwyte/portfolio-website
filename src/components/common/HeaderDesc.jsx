@@ -3,25 +3,41 @@ import styled from "styled-components";
 
 const Div = styled.div`
   position: relative;
-  margin-bottom: 25px;
+  max-width: 720px;
+  margin: auto;
 
   h1,
   h2,
   h3,
   h4 {
     font-weight: bold;
+    margin-bottom: 0px;
   }
 
   p {
-    position: absolute;
-    left: 0px;
-    right: 0px;
+    padding: 0px 25px;
+    margin: 0px auto;
 
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: -12px;
     color: ${({ isDark }) =>
-      isDark ? `white!important;` : `rgba(75,75,75,0.75)`};
+      isDark ? `white!important!imporant` : `rgba(75,75,75,0.75)!important`};
+  }
+
+  a {
+    text-decoration: none;
+    color: rgba(75, 75, 75, 0.75) !important;
+  }
+
+  @media only screen and (max-width: 600px) {
+    h1,
+    h2,
+    h3,
+    h4 {
+      font-size: 2rem;
+    }
+
+    p{
+      font-size: 0.8rem;
+    }
   }
 `;
 

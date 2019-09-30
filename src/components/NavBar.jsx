@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Section from "./common/Section";
+import Resume from "../assets/resume.pdf"
 
 const Surname = styled.span`
   @media only screen and (max-width: 600px) {
@@ -26,6 +27,10 @@ const navs = [
     href: "#techstack"
   },
   {
+    children: "Resume",
+    href: Resume
+  },
+  {
     children: "Blog",
     href: "#blog"
   }
@@ -33,23 +38,23 @@ const navs = [
 
 const NavItem = ({ children, href }) => {
   return (
-    <Section>
-      <li className="nav-item">
-        <a className="nav-link text-dark" href={href}>
-          {children}
-        </a>
-      </li>
-    </Section>
+    <li className="nav-item">
+      <a className="nav-link text-dark" href={href}>
+        {children}
+      </a>
+    </li>
   );
 };
 
 const NavBar = () => {
   return (
-    <ul className="nav justify-content-center">
-      {navs.map(nav => (
-        <NavItem {...nav} />
-      ))}
-    </ul>
+    <Section>
+      <ul className="nav justify-content-center">
+        {navs.map(nav => (
+          <NavItem key={navs.indexOf(nav)} {...nav} />
+        ))}
+      </ul>
+    </Section>
   );
 };
 

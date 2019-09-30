@@ -20,7 +20,7 @@ const Projects = () => {
       filterMethod: ({ type }) => type === "python3"
     },
     {
-      icon: "fab fa-internet-explorer",
+      icon: "fas fa-globe",
       label: "Web",
       filterMethod: ({ type }) => type === "webapp"
     },
