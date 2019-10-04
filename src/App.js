@@ -7,7 +7,6 @@ import NavBar from "./components/NavBar";
 import TechStack from "./components/TechStack/TechStack";
 import Footer from "./components/Footer/Footer";
 
-
 const Container = styled.div`
   font-family: "Ubuntu", sans-serif;
 
