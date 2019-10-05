@@ -9,6 +9,7 @@ import btcticker from "../assets/projects/btc-ticker.png";
 import mexbot from "../assets/projects/mexbot.png";
 import fxbot from "../assets/projects/forexbot.png";
 import moonbot from "../assets/projects/moonbot.png";
+import evebot from "../assets/projects/evebot.jpeg"
 
 export default function getProjects() {
   return [
@@ -99,6 +100,13 @@ export default function getProjects() {
       type: "python3",
       description:
         "A discord bot that shows real time moon phases and how much time left before the next full moon."
+    },
+    {
+      title: "Eve",
+      logo: evebot,
+      type: "python3",
+      description:
+        "A discord bot that relays users' messages on certain #channel(s) that the sender sets."
     }
   ];
 }

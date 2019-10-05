@@ -21,7 +21,7 @@ const Media = styled(Container)`
 
     @media only screen and (max-width: 600px) {
       width: 56px;
-      margin-right: 2px !important;
+      margin-right: 3px !important;
     }
   }
 
