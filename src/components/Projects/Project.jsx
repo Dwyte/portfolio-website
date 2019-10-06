@@ -30,6 +30,12 @@ const Media = styled(Container)`
     font-weight: bold;
     margin: 0px;
   }
+
+  transition-duration: 250ms;
+
+  :hover {
+    transform: scale3d(1.025, 1.025, 1.025);
+  }
 `;
 
 const Project = ({ title, logo, description, projectUrl }) => {

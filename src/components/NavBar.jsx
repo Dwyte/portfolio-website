@@ -17,6 +17,17 @@ const ScrollUp = styled.div`
   @media only screen and (max-width: 600px) {
     display: none;
   }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  animation: fadeIn 1s both;
 `;
 
 const SmoothLink = styled(Link)`
@@ -36,7 +47,7 @@ const navs = [
         Dwyte <Surname>Martin</Surname>
       </b>
     ),
-    href: "#home"
+    href: "/"
   },
   {
     children: "Projects",
@@ -48,7 +59,7 @@ const navs = [
   }
 ];
 
-const NavItem = ({ children, href, handleShowScroll }) => {
+const NavItem = ({ children, href }) => {
   return (
     <li className="nav-item">
       <SmoothLink
@@ -89,11 +100,13 @@ const NavBar = () => {
         </ScrollUp>
       )}
 
-      <ul className="nav justify-content-center">
-        {navs.map(nav => (
-          <NavItem key={navs.indexOf(nav)} {...nav} />
-        ))}
-      </ul>
+      <nav>
+        <ul className="nav justify-content-center">
+          {navs.map(nav => (
+            <NavItem key={navs.indexOf(nav)} {...nav} />
+          ))}
+        </ul>
+      </nav>
     </Section>
   );
 };

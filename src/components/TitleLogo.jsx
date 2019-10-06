@@ -8,7 +8,31 @@ import Anchor from "./_Styled/Anchor";
 
 const Img = styled.img`
   margin-bottom: 40px;
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: scale3d(1, 1, 1);
+    }
+
+    50% {
+      opacity: 0.5;
+      transform: scale3d(1.05, 1.05, 1.05);
+    }
+    to {
+      opacity: 1;
+      transform: scale3d(1, 1, 1);
+    }
+  }
+
+  animation: fadeIn 1.25s;
 `;
+
+const Button = styled.button`
+  @media only screen and (max-width: 600px) {
+    font-size: 14px!important;
+  }
+`
 
 const TitleLogo = () => {
   return (
@@ -24,9 +48,9 @@ const TitleLogo = () => {
       </HeaderDesc>
 
       <Anchor target="_blank" rel="noopener noreferrer" href={Resume}>
-        <button className="btn btn btn-primary">
+        <Button className="btn btn btn-primary">
           <i className="fas fa-file-download"></i> View Resume
-        </button>
+        </Button>
       </Anchor>
     </Section>
   );

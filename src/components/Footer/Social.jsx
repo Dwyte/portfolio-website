@@ -11,6 +11,8 @@ const Anchor = styled.a`
     margin: 0px 20px;
   }
 
+  transition: 250ms;
+
   :hover {
     color: ${({ color }) => color};
   }

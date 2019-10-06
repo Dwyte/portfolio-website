@@ -4,6 +4,12 @@ import Anchor from "../_Styled/Anchor";
 
 const TechImg = styled.img`
   margin: 20px;
+
+  transition: 250ms;
+
+  :hover{
+    transform: translateY(-7.5px)
+  }
 `;
 
 const Tech = ({ img, title, url }) => {
