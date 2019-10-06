@@ -1,7 +1,6 @@
-import React from "react";
 import styled from "styled-components";
 
-const Sect = styled.section`
+const Section = styled.section`
   margin-top: 50px;
   @media only screen and (max-width: 600px) {
     margin-top: 25px;
@@ -25,13 +24,5 @@ const Sect = styled.section`
     color: white;
   `}
 `;
-
-const Section = ({ children, id, isLast, isDark }) => {
-  return (
-    <Sect id={id} isLast={isLast} isDark={isDark}>
-      {children}
-    </Sect>
-  );
-};
 
 export default Section;

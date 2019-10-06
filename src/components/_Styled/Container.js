@@ -1,7 +1,6 @@
-import React from "react";
 import styled from "styled-components";
 
-const Cont = styled.div`
+const Container = styled.div`
   max-width: 720px;
 
   display: inline-block;
@@ -11,9 +10,5 @@ const Cont = styled.div`
     width: 100%;
   }
 `;
-
-const Container = ({ children }) => {
-  return <Cont>{children}</Cont>;
-};
 
 export default Container;

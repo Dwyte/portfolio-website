@@ -1,8 +1,8 @@
 import React from "react";
 import ReactTooltip from "react-tooltip";
 import Tech from "./Tech";
-import Section from "../common/Section";
-import HeaderDesc from "../common/HeaderDesc";
+import Section from "../_Styled/Section";
+import HeaderDesc from "../_Styled/HeaderDesc";
 import reactjs from "../../assets/techstack/reactjs.png";
 import nodejs from "../../assets/techstack/nodejs.png";
 import mongodb from "../../assets/techstack/mongodb.png";
@@ -14,18 +14,18 @@ import solidity from "../../assets/techstack/solidity.png";
 import graphql from "../../assets/techstack/graphql.png";
 
 const techStack = [
-  { title: "Node.js", img: nodejs, width: 100 },
-  { title: "React.js", img: reactjs, width: 100 },
-  { title: "MongoDB", img: mongodb, width: 100 },
-  { title: "Python", img: python, width: 100 },
-  { title: "Unity3d", img: unity, width: 100 }
+  { title: "Node.js", img: nodejs, url: "http://nodejs.org" },
+  { title: "React.js", img: reactjs, url: "http://reactjs.org" },
+  { title: "MongoDB", img: mongodb, url: "http://mongodb.com" },
+  { title: "Python", img: python, url: "http://python.org" },
+  { title: "Unity3d", img: unity, url: "http://unity.com" }
 ];
 
 const roadmap = [
-  { title: "Truffle Suite", img: truffle, width: 100 },
-  { title: "Solidity", img: solidity, width: 100 },
-  { title: "GraphQL", img: graphql, width: 100 },
-  { title: "Redux", img: redux, width: 100 }
+  { title: "Truffle Suite", img: truffle, url: "http://trufflesuite.com" },
+  { title: "Ethereum - Solidity", img: solidity, url: "http://ethereum.org" },
+  { title: "GraphQL", img: graphql, url: "http://graphql.org" },
+  { title: "Redux", img: redux, url: "http://react-redux.js.org" }
 ];
 
 const TechStack = () => {

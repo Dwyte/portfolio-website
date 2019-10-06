@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import Anchor from "../_Styled/Anchor";
 
 const Container = styled.div`
   color: white;
@@ -32,19 +33,16 @@ const Media = styled(Container)`
 `;
 
 const Project = ({ title, logo, description, projectUrl }) => {
-  function openInNewTab() {
-    if (!projectUrl) return;
-    window.open(projectUrl, "_blank");
-  }
-
   return (
-    <Media onClick={openInNewTab} className="media text-left">
-      <img src={logo} width={64} alt="..." />
-      <div className="media-body">
-        <h6 className="mt-0">{title}</h6>
-        {description}
-      </div>
-    </Media>
+    <Anchor target="_blank" rel="noopener noreferrer" href={projectUrl}>
+      <Media className="media text-left">
+        <img src={logo} width={64} alt="..." />
+        <div className="media-body">
+          <h6 className="mt-0">{title}</h6>
+          {description}
+        </div>
+      </Media>
+    </Anchor>
   );
 };
 

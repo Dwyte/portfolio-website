@@ -1,15 +1,16 @@
 import React from "react";
 import styled from "styled-components";
+import Anchor from "../_Styled/Anchor";
 
 const TechImg = styled.img`
   margin: 20px;
 `;
 
-const Tech = ({ img, width, title }) => {
+const Tech = ({ img, title, url }) => {
   return (
-    <span>
-      <TechImg data-tip={title} src={img} width={width} />
-    </span>
+    <Anchor target="_blank" rel="noopener noreferrer" href={url}>
+      <TechImg data-tip={title} src={img} width={100} />
+    </Anchor>
   );
 };
 

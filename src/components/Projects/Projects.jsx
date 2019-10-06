@@ -1,12 +1,12 @@
 import React, { useState } from "react";
-import HeaderDesc from "../common/HeaderDesc";
-import Section from "../common/Section";
+import HeaderDesc from "../_Styled/HeaderDesc";
+import Section from "../_Styled/Section";
 import ProjGrid from "./ProjGrid";
 import ProjNav from "./ProjNav";
 import underDevImg from "../../assets/projects/development.jpg";
 import _ from "lodash";
 import getProjects from "../../services/projects";
-import Container from "../common/Container";
+import Container from "../_Styled/Container";
 
 const projects = getProjects();
 

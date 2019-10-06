@@ -1,6 +1,6 @@
 import React from "react";
 import Social from "./Social";
-import Section from "../common/Section";
+import Section from "../_Styled/Section";
 
 const socials = [
   { icon: "fab fa-twitter", link: "https://twitter.com/DwyteMartin", color: "#1DA1F2" },

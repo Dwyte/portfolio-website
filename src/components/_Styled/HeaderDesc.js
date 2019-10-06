@@ -1,10 +1,10 @@
-import React from "react";
 import styled from "styled-components";
 
-const Div = styled.div`
+const HeaderDesc = styled.div`
   position: relative;
   max-width: 720px;
-  margin: auto;
+  margin: 0px auto;
+  margin-bottom: 10px;
 
   h1,
   h2,
@@ -35,14 +35,10 @@ const Div = styled.div`
       font-size: 2rem;
     }
 
-    p{
+    p {
       font-size: 0.8rem;
     }
   }
 `;
-
-const HeaderDesc = ({ children, isDark }) => {
-  return <Div isDark={isDark}>{children}</Div>;
-};
 
 export default HeaderDesc;
