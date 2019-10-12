@@ -1,21 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 import Anchor from "../_Styled/Anchor";
+import Badge from "../_Styled/Badge";
 
-const Container = styled.div`
-  color: white;
-  width: 100%;
-  height: 100%;
-  background: #000;
-  padding: 12px;
-  border-radius: 12px;
-  line-height: 15px;
-  font-size: 12px;
-  box-shadow: 1px 0px 5px -1px #000;
-  cursor: pointer;
-`;
-
-const Media = styled(Container)`
+const Media = styled(Badge)`
   img {
     border-radius: 12px;
     margin-right: 5px !important;
@@ -25,23 +13,12 @@ const Media = styled(Container)`
       margin-right: 3px !important;
     }
   }
-
-  h6 {
-    font-weight: bold;
-    margin: 0px;
-  }
-
-  transition-duration: 250ms;
-
-  :hover {
-    transform: scale3d(1.025, 1.025, 1.025);
-  }
 `;
 
 const Project = ({ title, logo, description, projectUrl }) => {
   return (
     <Anchor target="_blank" rel="noopener noreferrer" href={projectUrl}>
-      <Media className="media text-left">
+      <Media className="media text-left p-3">
         <img src={logo} width={64} alt="..." />
         <div className="media-body">
           <h6 className="mt-0">{title}</h6>

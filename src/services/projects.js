@@ -69,7 +69,7 @@ export default function getProjects() {
       logo: cipherchat,
       type: "webapp",
       description:
-        "An end-to-end encrypted instant messaging app built with MERN Stack. The app uses RSA assymetric encryption.",
+        "An end-to-end encrypted instant messaging app built with MERN Stack. The app uses AES and ECDH key exchange",
         projectUrl: "https://cipherchat.herokuapp.com"
     },
     {

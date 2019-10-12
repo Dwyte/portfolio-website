@@ -25,32 +25,66 @@ const Img = styled.img`
     }
   }
 
-  animation: fadeIn 1.25s;
+  animation: fadeIn 1.5s;
 `;
 
-const Button = styled.button`
-  @media only screen and (max-width: 600px) {
-    font-size: 14px!important;
+const Header = styled.h1`
+  ::after {
+    content: "Dwyte Martin";
+
+    @keyframes animateAfter {
+      from {
+        content: "Дуайт Мартин";
+      }
+
+      25% {
+        content: "드와이트 마틴";
+      }
+
+      50% {
+        content: "ドワイト・マーティン";
+      }
+
+      75% {
+        content: "44 77 79 74 65";
+      }
+
+      to {
+        content: "01000100 01001101";
+      }
+    }
+
+    animation: animateAfter 1.25s;
   }
-`
+
+  animation: fadeIn 1.25s;
+`;
 
 const TitleLogo = () => {
   return (
     <Section>
       <Img src={logo} width={150} alt="Dwyte Martin Logo" />
-
       <HeaderDesc>
-        <h1>Dwyte Martin</h1>
+        <Header></Header>
         <p>
-          A student & developer self-learning web technologies with interest on
-          finance, cryptography, and distributed ledger technology.
+          A Software Developer, 18y/o, currently taking Computer Science at
+          Cavite State University.
+          <br />
+          <span>
+            I built CoinMarketSignals, an indicator platform for traders,
+            discord bots for my trader clients and a lot more you can see below.
+          </span>
         </p>
       </HeaderDesc>
 
-      <Anchor target="_blank" rel="noopener noreferrer" href={Resume}>
-        <Button className="btn btn btn-primary">
-          <i className="fas fa-file-download"></i> View Resume
-        </Button>
+      <Anchor
+        type="button"
+        className="btn btn btn-primary"
+        target="_blank"
+        rel="noopener noreferrer"
+        href={Resume}
+      >
+        <i className="fas fa-file-download"></i> View Resume
       </Anchor>
     </Section>
   );

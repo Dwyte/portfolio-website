@@ -1,5 +1,5 @@
 import React from "react";
-import ReactTooltip from "react-tooltip";
+import styled from "styled-components";
 import Tech from "./Tech";
 import Section from "../_Styled/Section";
 import HeaderDesc from "../_Styled/HeaderDesc";
@@ -22,8 +22,8 @@ const techStack = [
 ];
 
 const roadmap = [
-  { title: "Truffle Suite", img: truffle, url: "http://trufflesuite.com" },
-  { title: "Ethereum - Solidity", img: solidity, url: "http://ethereum.org" },
+  { title: "Truffle", img: truffle, url: "http://trufflesuite.com" },
+  { title: "Solidity", img: solidity, url: "http://ethereum.org" },
   { title: "GraphQL", img: graphql, url: "http://graphql.org" },
   { title: "Redux", img: redux, url: "http://react-redux.js.org" }
 ];
@@ -31,25 +31,27 @@ const roadmap = [
 const TechStack = () => {
   return (
     <Section id="techstack">
-      <ReactTooltip place="bottom" type="dark" effect="solid" />
-
       <HeaderDesc>
         <h2> Technology Stack</h2>
         <p>Frameworks/Languages I'm familiar working with</p>
       </HeaderDesc>
 
-      {techStack.map(tech => (
-        <Tech key={techStack.indexOf(tech)} {...tech} />
-      ))}
+      <div className="my-3">
+        {techStack.map(tech => (
+          <Tech key={techStack.indexOf(tech)} {...tech} />
+        ))}
+      </div>
 
       <HeaderDesc>
         <h2>Roadmap</h2>
         <p>Technologies I'm interested learning in the future</p>
       </HeaderDesc>
 
-      {roadmap.map(tech => (
-        <Tech key={roadmap.indexOf(tech)} {...tech} />
-      ))}
+      <div className="mt-3">
+        {roadmap.map(tech => (
+          <Tech key={roadmap.indexOf(tech)} {...tech} />
+        ))}
+      </div>
     </Section>
   );
 };

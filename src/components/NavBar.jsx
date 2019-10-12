@@ -68,6 +68,7 @@ const NavItem = ({ children, href }) => {
         spy={true}
         smooth={true}
         duration={1000}
+        offset={-50}
       >
         {children}
       </SmoothLink>

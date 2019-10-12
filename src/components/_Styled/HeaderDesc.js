@@ -38,6 +38,10 @@ const HeaderDesc = styled.div`
     p {
       font-size: 0.8rem;
     }
+
+    span {
+      display: none;
+    }
   }
 `;
 

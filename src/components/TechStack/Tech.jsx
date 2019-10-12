@@ -1,22 +1,16 @@
 import React from "react";
-import styled from "styled-components";
 import Anchor from "../_Styled/Anchor";
-
-const TechImg = styled.img`
-  margin: 20px;
-
-  transition: 250ms;
-
-  :hover{
-    transform: translateY(-7.5px)
-  }
-`;
+import Badge from "../_Styled/Badge";
 
 const Tech = ({ img, title, url }) => {
   return (
-    <Anchor target="_blank" rel="noopener noreferrer" href={url}>
-      <TechImg data-tip={title} src={img} width={100} />
-    </Anchor>
+    <Badge className="m-2 p-3">
+      <Anchor target="_blank" rel="noopener noreferrer" href={url}>
+        <img className="mb-3 p-1" src={img} width={75} />
+      </Anchor>
+      <br />
+      <h6>{title}</h6>
+    </Badge>
   );
 };
 

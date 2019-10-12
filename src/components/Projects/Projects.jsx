@@ -59,8 +59,8 @@ const Projects = () => {
   }
 
   return (
-    <Section id="projects" isDark={true}>
-      <Container>
+    <Section isDark={true}>
+      <Container id="projects">
         <HeaderDesc isDark={true}>
           <h2>Projects</h2>
           <p>I have developed and worked on</p>
