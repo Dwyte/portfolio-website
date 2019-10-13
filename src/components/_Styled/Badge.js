@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 const Badge = styled.div`
-  display: inline-block;
   color: white;
   background: ${({ bgColor }) => bgColor || "black"};
   border-radius: 12px;

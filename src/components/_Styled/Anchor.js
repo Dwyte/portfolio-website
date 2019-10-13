@@ -9,7 +9,9 @@ const Anchor = styled.a`
   }
 
   @media only screen and (max-width: 600px) {
-    font-size: 14px !important;
+    button {
+      font-size: 14px !important;
+    }
   }
 `;
 

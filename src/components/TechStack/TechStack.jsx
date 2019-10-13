@@ -1,5 +1,4 @@
 import React from "react";
-import styled from "styled-components";
 import Tech from "./Tech";
 import Section from "../_Styled/Section";
 import HeaderDesc from "../_Styled/HeaderDesc";

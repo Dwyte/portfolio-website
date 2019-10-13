@@ -7,6 +7,7 @@ import underDevImg from "../../assets/projects/development.jpg";
 import _ from "lodash";
 import getProjects from "../../services/projects";
 import Container from "../_Styled/Container";
+import Pagination from "../Pagination";
 
 const projects = getProjects();
 
@@ -30,6 +31,7 @@ const Projects = () => {
       filterMethod: ({ type }) => type === "mobile"
     }
   ];
+  const [activePage, setActivePage] = useState(0);
 
   function sliceArrayIntoGroups(arr, size) {
     var step = 0,
@@ -58,6 +60,13 @@ const Projects = () => {
     });
   }
 
+  // Paginate Projects
+  const filteredProjectsCopy = [...filteredProjects]
+  const paginatedProjects = [];
+  while (filteredProjectsCopy.length !== 0) {
+    paginatedProjects.push(filteredProjectsCopy.splice(0, 4));
+  }
+
   return (
     <Section isDark={true}>
       <Container id="projects">
@@ -70,9 +79,17 @@ const Projects = () => {
           filters={filters}
           filterIndex={filterIndex}
           setFilter={setFilter}
+          resetPagination={() => setActivePage(0)}
         />
 
-        <ProjGrid projectGroups={sliceArrayIntoGroups(filteredProjects, 2)} />
+        <ProjGrid projectGroups={sliceArrayIntoGroups(paginatedProjects[activePage], 2)} />
+
+        <Pagination
+          totalItems={filteredProjects.length}
+          itemsPerPage={4}
+          activePage={activePage}
+          setActivePage={setActivePage}
+        />
       </Container>
     </Section>
   );

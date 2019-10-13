@@ -9,7 +9,7 @@ const NavItem = styled.li`
     color: white !important;
 
     @media only screen and (max-width: 600px) {
-      padding: 0.12rem 0.32rem;
+      padding: 0.15rem 0.32rem;
       font-size: 14px;
     }
 
@@ -23,18 +23,19 @@ const NavItem = styled.li`
   }
 `;
 
-const ProjNav = ({ filters, filterIndex, setFilter }) => {
+const ProjNav = ({ filters, filterIndex, setFilter, resetPagination }) => {
   return (
     <ul className="nav justify-content-center">
       {filters.map(filter => (
         <NavItem
           key={filters.indexOf(filter)}
-          className="nav-item"
+          className="nav-item mx-1"
           isActive={filters[filterIndex] === filter}
         >
           <div
             className="nav-link text-dark active"
             onClick={() => {
+              resetPagination();
               setFilter(filters.indexOf(filter));
             }}
           >

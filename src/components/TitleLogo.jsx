@@ -77,14 +77,10 @@ const TitleLogo = () => {
         </p>
       </HeaderDesc>
 
-      <Anchor
-        type="button"
-        className="btn btn btn-primary"
-        target="_blank"
-        rel="noopener noreferrer"
-        href={Resume}
-      >
-        <i className="fas fa-file-download"></i> View Resume
+      <Anchor target="_blank" rel="noopener noreferrer" href={Resume}>
+        <button type="button" className="btn btn btn-primary">
+          <i className="fas fa-file-download"></i> View Resume
+        </button>
       </Anchor>
     </Section>
   );

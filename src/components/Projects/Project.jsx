@@ -21,7 +21,7 @@ const Project = ({ title, logo, description, projectUrl }) => {
       <Media className="media text-left p-3">
         <img src={logo} width={64} alt="..." />
         <div className="media-body">
-          <h6 className="mt-0">{title}</h6>
+          <h6>{title}</h6>
           {description}
         </div>
       </Media>

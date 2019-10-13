@@ -9,7 +9,7 @@ import btcticker from "../assets/projects/btc-ticker.png";
 import mexbot from "../assets/projects/mexbot.png";
 import fxbot from "../assets/projects/forexbot.png";
 import moonbot from "../assets/projects/moonbot.png";
-import evebot from "../assets/projects/evebot.jpeg"
+import evebot from "../assets/projects/evebot.jpeg";
 
 export default function getProjects() {
   return [
@@ -54,7 +54,7 @@ export default function getProjects() {
       type: "webapp",
       description:
         "CoinMarketSignals is a data platform of cryptocurrencies and what the popular technical indicators tell about them.",
-        projectUrl: "https://coinmarketsignals.netlify.com"
+      projectUrl: "https://coinmarketsignals.netlify.com"
     },
     {
       title: "VaultSafe",
@@ -62,7 +62,7 @@ export default function getProjects() {
       type: "webapp",
       description:
         "Glorified TodoApp with encryption techniques I developed while learning ReactJS hooks.",
-        projectUrl: "https://vaultsafe.herokuapp.com"
+      projectUrl: "https://vaultsafe.herokuapp.com"
     },
     {
       title: "CipherChat",
@@ -70,7 +70,7 @@ export default function getProjects() {
       type: "webapp",
       description:
         "An end-to-end encrypted instant messaging app built with MERN Stack. The app uses AES and ECDH key exchange",
-        projectUrl: "https://cipherchat.herokuapp.com"
+      projectUrl: "https://cipherchat.herokuapp.com"
     },
     {
       title: "Bitcoin Ticker",
@@ -78,14 +78,15 @@ export default function getProjects() {
       type: "python3",
       description:
         "A system tray application for linux that shows bitcoin's current USD price, and updates ever 3 seconds.",
-        projectUrl: "https://www.youtube.com/watch?v=CigorCz_3S0"
+      projectUrl: "https://www.youtube.com/watch?v=CigorCz_3S0"
     },
     {
       title: "Mexbot",
       logo: mexbot,
       type: "python3",
       description:
-        "A discord bot connected to the Bitmex's WebSocket API that shows large-quantity trades in real-time"
+        "A discord bot connected to the Bitmex's WebSocket API that shows large-quantity trades in real-time",
+      projectUrl: "https://www.youtube.com/watch?v=P6hu8tYKYd0"
     },
     {
       title: "Fx Calendar Bot",
@@ -99,14 +100,16 @@ export default function getProjects() {
       logo: moonbot,
       type: "python3",
       description:
-        "A discord bot that shows real time moon phases and how much time left before the next full moon."
+        "A discord bot that shows real time moon phases and how much time left before the next full moon.",
+      projectUrl: "https://www.youtube.com/watch?v=aRsmAD_buSw"
     },
     {
       title: "Eve",
       logo: evebot,
       type: "python3",
       description:
-        "A discord bot that relays users' messages on certain #channel(s) that the sender sets."
+        "A discord bot that relays users' messages on certain #channel(s) that the sender sets.",
+      projectUrl: "https://www.youtube.com/watch?v=Ye-N72SbFgw"
     }
   ];
 }
