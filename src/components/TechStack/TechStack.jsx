@@ -5,7 +5,6 @@ import HeaderDesc from "../_Styled/HeaderDesc";
 import reactjs from "../../assets/techstack/reactjs.png";
 import nodejs from "../../assets/techstack/nodejs.png";
 import mongodb from "../../assets/techstack/mongodb.png";
-import unity from "../../assets/techstack/unity.png";
 import python from "../../assets/techstack/python.png";
 import truffle from "../../assets/techstack/truffle.png";
 import redux from "../../assets/techstack/redux.png";
@@ -17,7 +16,6 @@ const techStack = [
   { title: "React.js", img: reactjs, url: "http://reactjs.org" },
   { title: "MongoDB", img: mongodb, url: "http://mongodb.com" },
   { title: "Python", img: python, url: "http://python.org" },
-  { title: "Unity3d", img: unity, url: "http://unity.com" }
 ];
 
 const roadmap = [
@@ -32,7 +30,7 @@ const TechStack = () => {
     <Section id="techstack">
       <HeaderDesc>
         <h2> Technology Stack</h2>
-        <p>Frameworks/Languages I'm familiar working with</p>
+        <p>Frameworks & Technologies I'm familiar working with</p>
       </HeaderDesc>
 
       <div className="my-3">
