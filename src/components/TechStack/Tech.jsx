@@ -1,31 +1,33 @@
 import React from "react";
 import styled from "styled-components";
-import Anchor from "../_Styled/Anchor";
-import Badge from "../_Styled/Badge";
+import Anchor from "../common/Anchor";
 
-const TechBadge = styled(Badge)`
+const TechCard = styled.div`
+  color: ${({ theme }) => theme.fontColor};
   display: inline-block;
 
-  @media only screen and (max-width: 600px) {
-    img {
-      width: 75px;
-    }
+  img {
+    filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.25));
+  }
 
-    h6 {
-      font-size: 14px;
-    }
+  :hover {
+    color: ${({ theme }) => theme.accentColor};
+  }
+
+  p {
+    margin-bottom: 0 !important;
   }
 `;
 
 const Tech = ({ img, title, url }) => {
   return (
-    <TechBadge bgColor="rgb(25,25,25)" className="m-2 p-3">
-      <Anchor target="_blank" rel="noopener noreferrer" href={url}>
+    <Anchor target="_blank" rel="noopener noreferrer" href={url}>
+      <TechCard className="mx-4 p-2">
         <img alt={title} className="mb-3 p-1" src={img} width={75} />
-      </Anchor>
-      <br />
-      <h6>{title}</h6>
-    </TechBadge>
+        <br />
+        <p>{title}</p>
+      </TechCard>
+    </Anchor>
   );
 };
 

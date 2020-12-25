@@ -1,35 +1,38 @@
 import React, { useState } from "react";
-import HeaderDesc from "../_Styled/HeaderDesc";
-import Section from "../_Styled/Section";
+import _ from "lodash";
+
+import underDevImg from "../../assets/projects/development.jpg";
+import getProjects from "../../services/projects";
+
+import HeaderDesc from "../common/HeaderDesc";
+import Container from "../common/Container";
+import Section from "../common/Section";
+
+import Pagination from "../Pagination";
 import ProjGrid from "./ProjGrid";
 import ProjNav from "./ProjNav";
-import underDevImg from "../../assets/projects/development.jpg";
-import _ from "lodash";
-import getProjects from "../../services/projects";
-import Container from "../_Styled/Container";
-import Pagination from "../Pagination";
 
 const projects = getProjects();
 
 const Projects = () => {
   const [filterIndex, setFilter] = useState(0);
   const filters = [
-    { icon: "fas fa-star-of-life", label: "All of 'em", filterMethod: null },
+    { icon: "fas fa-star-of-life", label: "all", filterMethod: null },
     {
       icon: "fab fa-python",
-      label: "Python",
-      filterMethod: ({ type }) => type === "python3"
+      label: "python",
+      filterMethod: ({ type }) => type === "python3",
     },
     {
       icon: "fas fa-globe",
-      label: "Web",
-      filterMethod: ({ type }) => type === "webapp"
+      label: "web",
+      filterMethod: ({ type }) => type === "webapp",
     },
     {
       icon: "fas fa-mobile",
-      label: "Mobile",
-      filterMethod: ({ type }) => type === "mobile"
-    }
+      label: "mobile",
+      filterMethod: ({ type }) => type === "mobile",
+    },
   ];
   const [activePage, setActivePage] = useState(0);
 
@@ -52,16 +55,16 @@ const Projects = () => {
 
   if (filteredProjects.length % 2 !== 0) {
     filteredProjects.push({
-      title: "Under Development 🚧",
+      title: "To Be Developed",
       logo: underDevImg,
       type: "python3",
       description:
-        "More Useful Applications to be released, developed and worked upon soon!"
+        "More applications to be developed, worked on and released soon.",
     });
   }
 
   // Paginate Projects
-  const filteredProjectsCopy = [...filteredProjects]
+  const filteredProjectsCopy = [...filteredProjects];
   const paginatedProjects = [];
   while (filteredProjectsCopy.length !== 0) {
     paginatedProjects.push(filteredProjectsCopy.splice(0, 4));
@@ -69,10 +72,10 @@ const Projects = () => {
 
   return (
     <Section isDark={true}>
-      <Container id="projects">
+      <Container id="showcase">
         <HeaderDesc isDark={true}>
-          <h2>Projects</h2>
-          <p>I have developed and worked on</p>
+          <h2>Showcase</h2>
+          <p>Projects that I have developed or worked on.</p>
         </HeaderDesc>
 
         <ProjNav
@@ -82,7 +85,9 @@ const Projects = () => {
           resetPagination={() => setActivePage(0)}
         />
 
-        <ProjGrid projectGroups={sliceArrayIntoGroups(paginatedProjects[activePage], 2)} />
+        <ProjGrid
+          projectGroups={sliceArrayIntoGroups(paginatedProjects[activePage], 2)}
+        />
 
         <Pagination
           totalItems={filteredProjects.length}

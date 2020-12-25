@@ -1,15 +1,17 @@
-import React from "react";
-import logo from "../assets/logo-shadow.png";
-import HeaderDesc from "./_Styled/HeaderDesc";
-import Section from "./_Styled/Section";
 import styled from "styled-components";
-import Resume from "../assets/resume.pdf";
-import Anchor from "./_Styled/Anchor";
+import React from "react";
+
+import logo from "../assets/logo.jpg";
+
+import HeaderDesc from "./common/HeaderDesc";
+import Section from "./common/Section";
+import Anchor from "./common/Anchor";
 
 const Img = styled.img`
-  margin-bottom: 40px;
+  margin-bottom: 1rem;
+  border-radius: ${({ theme }) => theme.borderRadius};
 
-  @keyframes fadeIn {
+  @keyframes enlarge {
     from {
       opacity: 0;
       transform: scale3d(1, 1, 1);
@@ -25,40 +27,44 @@ const Img = styled.img`
     }
   }
 
-  animation: fadeIn 1.5s;
+  animation: enlarge 1.5s;
 `;
 
 const Header = styled.h1`
   ::after {
-    content: "Dwyte Martin";
+    content: "Dwight";
 
     @keyframes animateAfter {
       from {
-        content: "Дуайт Мартин";
+        content: "Dwight";
       }
-
-      25% {
-        content: "드와이트 마틴";
+      20% {
+        content: "01000100";
       }
-
-      50% {
-        content: "ドワイト・マーティン";
+      40% {
+        content: "ZHd5dGU=";
       }
-
-      75% {
-        content: "44 77 79 74 65";
+      60% {
+        content: "드와이트";
       }
-
+      80% {
+        content: "ドワイト";
+      }
       to {
-        content: "01000100 01001101";
+        content: "Ɖωιɢнт";
       }
     }
 
-    animation: animateAfter 1.25s;
+    animation: animateAfter 1s;
   }
 
-  animation: fadeIn 1.25s;
+  animation: enlarge 1s;
 `;
+
+const iamURL = "https://iam-web-client.herokuapp.com/";
+
+const appcon2020URL =
+  "https://www.facebook.com/appcon2019/photos/a.702937983408567/1108157709553257";
 
 const TitleLogo = () => {
   return (
@@ -67,21 +73,30 @@ const TitleLogo = () => {
       <HeaderDesc>
         <Header></Header>
         <p>
-          A Software Developer, 18y/o, currently taking Computer Science at
-          Cavite State University.
-          <br />
-          <span>
-            I built CoinMarketSignals, an indicator platform for traders,
-            discord bots for my trader clients and a lot more you can see below.
-          </span>
+          I am a Computer Science student at Cavite State University. I do
+          full-stack web development on the side while I'm still finishing my
+          studies. The most notable project I've worked on recently is{" "}
+          <Anchor
+            target="_blank"
+            rel="noopener noreferrer"
+            href={iamURL}
+            isText
+          >
+            iam
+          </Anchor>
+          , which is a decentralized credentials system that I co-developed as
+          an entry for AppCon 2020 and has won the{" "}
+          <Anchor
+            target="_blank"
+            rel="noopener noreferrer"
+            href={appcon2020URL}
+            isText
+          >
+            "Best Technology"
+          </Anchor>{" "}
+          award.
         </p>
       </HeaderDesc>
-
-      <Anchor target="_blank" rel="noopener noreferrer" href={Resume}>
-        <button type="button" className="btn btn btn-primary">
-          <i className="fas fa-file-download"></i> View Resume
-        </button>
-      </Anchor>
     </Section>
   );
 };

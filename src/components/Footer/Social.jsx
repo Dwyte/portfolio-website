@@ -1,18 +1,17 @@
-import React from "react";
 import styled from "styled-components";
+import React from "react";
 
 const Anchor = styled.a`
-  color: rgba(25, 25, 25, 1);
-  font-size: 24px;
-  margin: 0px 25px;
+  color: ${({ theme }) => theme.fontColor};
+  font-size: 1.25rem;
+  margin: 0px 2rem;
 
   @media only screen and (max-width: 600px) {
     font-size: 20px;
     margin: 0px 20px;
   }
 
-  transition: 250ms;
-
+  transition: 200ms;
   :hover {
     color: ${({ color }) => color};
   }

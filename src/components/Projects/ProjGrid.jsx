@@ -1,29 +1,32 @@
-import React from "react";
-import Project from "./Project";
 import styled from "styled-components";
+import React from "react";
+
+import Project from "./Project";
 
 const Container = styled.div`
-  padding-left: 30px !important;
-  padding-right: 0px !important;
-  margin-top: 10px!important;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: ${({ theme }) => theme.spacing / 2}rem;
+
+  @media only screen and (max-width: 800px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
 `;
 
-const ColSm = styled.div`
-  padding: 5px !important;
-`;
+const Cell = styled.div``;
 
 const ProjGrid = ({ projectGroups }) => {
   return (
-    <Container className="container">
-      {projectGroups.map(row => (
-        <div key={projectGroups.indexOf(row)} className="row">
-          {row.map(project => (
-            <ColSm key={row.indexOf(project)} className="col-sm">
-              <Project {...project} />
-            </ColSm>
-          ))}
-        </div>
-      ))}
+    <Container>
+      {projectGroups.map((row, rowIndex) =>
+        row.map((project, projectIndex) => (
+          <Cell key={projectIndex}>
+            <Project {...project} />
+          </Cell>
+        ))
+      )}
     </Container>
   );
 };

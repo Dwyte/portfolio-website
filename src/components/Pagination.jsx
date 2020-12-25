@@ -1,31 +1,37 @@
-import React from "react";
 import styled from "styled-components";
+import React from "react";
+import Container from "./common/Container";
 
 const PageList = styled.ul`
   list-style-type: none;
-  padding: 0px !important;
+  padding: 0px;
+
+  margin-top: ${({ theme }) => theme.spacing / 2}rem;
 `;
 
 const PageNav = styled.i`
-  cursor: pointer;
-  color: ${({ disabled }) => disabled && "rgb(75, 75, 75)"};
+  color: ${({ disabled, theme }) =>
+    disabled ? theme.fontColorSecondary : theme.fontColor};
+
+  :hover {
+    cursor: pointer;
+    color: ${({ disabled, theme }) => !disabled && theme.accentColor};
+  }
 `;
 
 const Page = styled.li`
+  background: ${({ theme }) => theme.foreground};
+  color: ${({ theme }) => theme.fontColor};
+  padding: 0.25rem 0.75rem;
+  border-radius: 0.2rem;
   display: inline;
-  padding: 5px 10px;
-  border-radius: 5px;
-  box-shadow: 1px 0px 5px -1px #000;
-  cursor: pointer;
-  background: black;
-  color: white;
 `;
 
 const Pagination = ({
   totalItems,
   itemsPerPage,
   activePage,
-  setActivePage
+  setActivePage,
 }) => {
   const lastPage = Math.ceil(totalItems / itemsPerPage) - 1;
 
@@ -36,19 +42,21 @@ const Pagination = ({
   }
 
   return (
-    <PageList className="mt-3">
-      <PageNav
-        className="fas fa-step-backward mx-2"
-        onClick={() => handlePageChange(activePage - 1)}
-        disabled={activePage === 0}
-      ></PageNav>
-      <Page className="mx-2">Page {activePage + 1}</Page>
-      <PageNav
-        className="fas fa-step-forward mx-2"
-        onClick={() => handlePageChange(activePage + 1)}
-        disabled={activePage === lastPage}
-      ></PageNav>
-    </PageList>
+    <Container>
+      <PageList>
+        <PageNav
+          className="fas fa-step-backward mx-2"
+          onClick={() => handlePageChange(activePage - 1)}
+          disabled={activePage === 0}
+        ></PageNav>
+        <Page className="mx-2">Page {activePage + 1}</Page>
+        <PageNav
+          className="fas fa-step-forward mx-2"
+          onClick={() => handlePageChange(activePage + 1)}
+          disabled={activePage === lastPage}
+        ></PageNav>
+      </PageList>
+    </Container>
   );
 };
 

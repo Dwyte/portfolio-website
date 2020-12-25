@@ -1,16 +1,17 @@
-body {
+* {
   margin: 0;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Roboto Mono", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 @font-face {
-  font-family: "Ubuntu";
-  src: url("./Ubuntu-R.ttf");
+  font-family: "Roboto Mono";
+  src: url("./RobotoMono.ttf");
 }
