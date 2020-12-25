@@ -18,7 +18,9 @@ const HeaderDesc = styled.div`
 
   p {
     margin: 0px auto;
-    color: ${({ theme }) => theme.fontColorSecondary};
+    span {
+      color: ${({ theme }) => theme.fontColorSecondary}!important;
+    }
   }
 
   @media only screen and (max-width: 800px) {
