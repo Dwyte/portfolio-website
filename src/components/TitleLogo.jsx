@@ -73,9 +73,8 @@ const TitleLogo = () => {
       <HeaderDesc>
         <Header></Header>
         <p>
-          I'm a full-stack web developer and currently a Computer Science
-          student at Cavite State University. The most notable project I've
-          worked on recently is{" "}
+          I'm currently a BS Computer Science student at Cavite State University. 
+          The most notable project I've worked on recently is{" "}
           <Anchor
             target="_blank"
             rel="noopener noreferrer"
@@ -84,7 +83,7 @@ const TitleLogo = () => {
           >
             iam
           </Anchor>
-          , which is a decentralized credentials system that I co-developed for
+          , which is a blockchain-based credential system that I co-developed for
           AppCon 2020 and has won the{" "}
           <Anchor
             target="_blank"
