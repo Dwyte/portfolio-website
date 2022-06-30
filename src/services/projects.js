@@ -10,6 +10,7 @@ import mexbot from "../assets/projects/mexbot.png";
 import fxbot from "../assets/projects/forexbot.png";
 import moonbot from "../assets/projects/moonbot.png";
 import evebot from "../assets/projects/evebot.jpeg";
+import sortingVisualized from "../assets/projects/sorting-visualized.png"
 
 export default function getProjects() {
   return [
@@ -110,6 +111,14 @@ export default function getProjects() {
       description:
         "A discord bot that relays users' messages on certain #channel(s) that the sender sets.",
       projectUrl: "https://www.youtube.com/watch?v=Ye-N72SbFgw",
+    },
+    {
+      title: "Sorting, Visualized.",
+      logo: sortingVisualized,
+      type: "webapp",
+      description:
+        "A slick looking and fully featured sorting visualizer. My own spin-off of the many sorting visualizers out there.",
+      projectUrl: "https://dwyte.github.io/sorting-visualized/",
     },
   ];
 }
