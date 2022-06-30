@@ -19,7 +19,7 @@ export default function getProjects() {
       logo: colorrush,
       type: "mobile",
       description:
-        "Color Rush is an awesome, intensely challenging, mind blowing, simple yet amazing game.",
+        "Color Rush is a challenging arcade mobile game based on stroop effect.",
       projectUrl:
         "https://play.google.com/store/apps/details?id=com.colorrush.colorswitch",
     },
@@ -46,7 +46,7 @@ export default function getProjects() {
       logo: vdvs,
       type: "webapp",
       description:
-        "A Capston Project for facilitating our school's SSG elections. (co-developed w/ carljustinemosquida)",
+        "A Capstone Project for facilitating our school's SSG elections.",
       projectUrl: "https://www.youtube.com/watch?v=RC3OwBsIJsg",
     },
     {
@@ -86,7 +86,7 @@ export default function getProjects() {
       logo: mexbot,
       type: "python3",
       description:
-        "A discord bot connected to the Bitmex's WebSocket API that shows large-quantity trades in real-time",
+        "A discord bot connected to the Bitmex API that shows large-quantity trades in real-time",
       projectUrl: "https://www.youtube.com/watch?v=P6hu8tYKYd0",
     },
     {
@@ -101,7 +101,7 @@ export default function getProjects() {
       logo: moonbot,
       type: "python3",
       description:
-        "A discord bot that shows real time moon phases and how much time left before the next full moon.",
+        "A discord bot that shows real time moon phases.",
       projectUrl: "https://www.youtube.com/watch?v=aRsmAD_buSw",
     },
     {
@@ -117,7 +117,7 @@ export default function getProjects() {
       logo: sortingVisualized,
       type: "webapp",
       description:
-        "A slick looking and fully featured sorting visualizer. My own spin-off of the many sorting visualizers out there.",
+        "A slick looking and fully featured sorting algorithms visualizer.",
       projectUrl: "https://dwyte.github.io/sorting-visualized/",
     },
   ];

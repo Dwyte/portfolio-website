@@ -4,7 +4,7 @@ const theme = {
   fontColor: "#fff",
   fontColorSecondary: "#aaa",
   accentColor: "#F9991F",
-  borderRadius: "0.2rem",
+  borderRadius: "0.33rem",
   spacing: 2,
 };
 
