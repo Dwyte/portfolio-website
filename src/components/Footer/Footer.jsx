@@ -40,7 +40,7 @@ const Footer = () => {
       {socials.map((social) => (
         <Social key={socials.indexOf(social)} {...social} />
       ))}
-      <FooterText className="mt-3">v2020.12.25</FooterText>
+      <FooterText className="mt-3">v2022.06.30</FooterText>
     </Section>
   );
 };
