@@ -6,7 +6,7 @@ const Container = styled.div`
   display: inline-block;
   text-align: center;
 
-  div {
+  > div {
     width: 100%;
   }
 `;

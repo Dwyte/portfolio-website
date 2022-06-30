@@ -15,12 +15,15 @@ const Project = ({ title, logo, description, projectUrl }) => {
   return (
     <Anchor target="_blank" rel="noopener noreferrer" href={projectUrl}>
       <Card>
-        <Media className="media text-left p-3">
+        <Media className="d-flex align-items-center p-3">
+          <div className="flex-shrink-0">
           <img src={logo} width={64} alt="..." />
-          <div className="media-body">
+          </div>
+          <div className="flex-grow-1 text-start ms-3">
             <h6>{title}</h6>
             {description}
           </div>
+          
         </Media>
       </Card>
     </Anchor>
