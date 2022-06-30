@@ -22,7 +22,7 @@ const SmoothLink = styled(Link)`
 
 const NavItem = ({ children, href, isHeader }) => {
   return (
-    <li className="nav-item">
+    <li className="nav-item mx-3">
       <SmoothLink
         className="nav-link"
         isHeader={isHeader}
