@@ -18,11 +18,16 @@ const SmoothLink = styled(Link)`
       letter-spacing: 2px;
       font-size: 1rem;
     `}
+
+    margin: 0px 32px;
+    @media only screen and (max-width: 800px) {
+        margin: 0;
+    }
 `;
 
 const NavItem = ({ children, href, isHeader }) => {
   return (
-    <li className="nav-item mx-3">
+    <li className="nav-item">
       <SmoothLink
         className="nav-link"
         isHeader={isHeader}
