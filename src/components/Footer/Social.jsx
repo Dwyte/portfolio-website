@@ -4,7 +4,7 @@ import React from "react";
 const Anchor = styled.a`
   color: ${({ theme }) => theme.fontColor};
   font-size: 1.25rem;
-  margin: 0px 2rem;
+  margin: 0px 3rem;
 
   @media only screen and (max-width: 600px) {
     font-size: 20px;
